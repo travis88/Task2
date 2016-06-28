@@ -1,5 +1,5 @@
 body {
-    background-color: #eeeeee;
+    background-color: #e6e1e1;
     margin-left: 128px;
     margin-right: 133px;
 }
@@ -8,7 +8,7 @@ body {
     background-color: #f7f7f7;
     margin-left: -128px;
     padding-left: 128px;
-    width: 1280px;
+    width: 1150px;
     height: 40px;
 }
 
@@ -160,6 +160,7 @@ nav > a:hover {
     width: 280px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     font-family: Ubuntu, sans-serif;
+    background-color: white;
 }
 
 .subscrip > h3 {
@@ -251,7 +252,7 @@ nav > a:hover {
 .footer #social {
     width: 300px;
     margin-left: 750px;
-    margin-top: -47px;
+    margin-top: -50px;
 }
 
 #icons > a {
