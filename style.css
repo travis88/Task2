@@ -6,7 +6,9 @@ body {
 
 .vers {
     background-color: #f7f7f7;
-    width: 1018px;
+    margin-left: -128px;
+    padding-left: 128px;
+    width: 1280px;
     height: 40px;
 }
 
@@ -24,8 +26,8 @@ img[name=eye] {
 }
 
 img[name=clock] {
-    float: right;
-    margin-right: 115px;
+    float: left;
+    margin-left: 885px;
     margin-top: -29px;
 }
 

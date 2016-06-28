@@ -55,8 +55,6 @@ function previousButtonPressed() {
 }
 
 function updateInd(i) {
-    // document.slider.previos.src = "images/left_act.png";
-    
     document.dot1.src = "images/passiv.png";
     document.dot2.src = "images/passiv.png";
     document.dot3.src = "images/passiv.png";
