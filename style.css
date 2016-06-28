@@ -74,12 +74,14 @@ img[name=clock] {
     margin-top: -50px;
 }
 
-.email {
+.email > a {
     float: left;
     margin-left: 530px;
     margin-top: -50px;
     font-family: Noto Serif, sans-serif;
     font-size: 18px;
+    text-decoration: none;
+    color: black;
 }
 
 .search > input {

@@ -66,3 +66,18 @@ function updateInd(i) {
         case 12: document.dot4.src = "images/activ.png"; document.next.src = "images/right_pas.png"; break;
     }
 }
+
+function setupPosition(j) {
+    i = j;
+    document.slider1.src = img[j].src;
+    document.slider2.src = img[j + 1].src;
+    document.slider3.src = img[j + 2].src;
+    document.slider4.src = img[j + 3].src;
+    if (j > 0) {
+        document.previos.src = "images/left_act.png";
+    }
+    if (j < 12) {
+        document.next.src = "images/right_act.png";
+    }
+    updateInd(j);
+}
