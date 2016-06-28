@@ -3,75 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-        var img = new Array(16);
-        img[0] = new Image();
-        img[0].src = "posters/1.jpg";
-        img[1] = new Image();
-        img[1].src = "posters/2.jpg";
-        img[2] = new Image();
-        img[2].src = "posters/3.jpg";
-        img[3] = new Image();
-        img[3].src = "posters/4.jpg";
-        img[4] = new Image();
-        img[4].src = "posters/5.jpg";
-        img[5] = new Image();
-        img[5].src = "posters/6.jpg";
-        img[6] = new Image();
-        img[6].src = "posters/7.jpg";
-        img[7] = new Image();
-        img[7].src = "posters/8.jpg";
-        img[8] = new Image();
-        img[8].src = "posters/9.jpg";
-        img[9] = new Image();
-        img[9].src = "posters/10.jpg";
-        img[10] = new Image();
-        img[10].src = "posters/11.jpg";
-        img[11] = new Image();
-        img[11].src = "posters/12.jpg";
-        img[12] = new Image();
-        img[12].src = "posters/13.jpg";
-        img[13] = new Image();
-        img[13].src = "posters/14.jpg";
-        img[14] = new Image();
-        img[14].src = "posters/15.jpg";
-        img[15] = new Image();
-        img[15].src = "posters/16.jpg";
-
-        var i = 0;
-        function nextButtonPressed() {
-            i += 4;
-            if (i > 13) { i = 12; }
-            document.form.slider1.src = img[i].src;
-            document.form.slider2.src = img[i + 1].src;
-            document.form.slider3.src = img[i + 2].src;
-            document.form.slider4.src = img[i + 3].src;
-        }
-        function previousButtonPressed() {
-            i -= 4;
-            if (i <= 3) { i = 0; }
-            document.form.slider1.src = img[i].src;
-            document.form.slider2.src = img[i + 1].src;
-            document.form.slider3.src = img[i + 2].src;
-            document.form.slider4.src = img[i + 3].src;
-
-        }
-    </script>
+    <script src="action.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-<form name="form">
-    <input type="button" value="previous" onclick="previousButtonPressed()">
-    <img src="posters/1.jpg" name="slider1" height="302">
-    <img src="posters/2.jpg" name="slider2" height="302">
-    <img src="posters/3.jpg" name="slider3" height="302">
-    <img src="posters/4.jpg" name="slider4" height="302">
-    <input type="button" value="next" onclick="nextButtonPressed()">
-    <div>
+<div class="vers">
+    <img name="eye" src="images/eye.png">
+    <p name="version">ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ</p>
+    <img name="clock" src="images/clock.png">
+    <p name="date">28 июня 2016 года</p>
+</div>
+<div class="header">
+    <p>Республиканский центр народного творчества</p>
+    <h2>Дворец культуры<br>тракторостроителей</h2>
+</div>
+<div class="slider">
+    <h2>Афиша мероприятий</h2>
+    <div class="button_left">
+        <button onclick="previousButtonPressed()"><img src="images/left_pas.png" name="previos"></button>
+    </div>
+    <div class="button_right">
+        <button onclick="nextButtonPressed()"><img src="images/right_act.png" name="next"></button>
+    </div>
+
+    <div class="posters"><img src="posters/1.jpg" name="slider1" height="302">
+        <img src="posters/2.jpg" name="slider2" height="302">
+        <img src="posters/3.jpg" name="slider3" height="302">
+        <img src="posters/4.jpg" name="slider4" height="302"></div>
+
+    <div class="indikator">
         <img src="images/activ.png" name="dot1">
         <img src="images/passiv.png" name="dot2">
         <img src="images/passiv.png" name="dot3">
         <img src="images/passiv.png" name="dot4">
     </div>
-</form>
+</div>
+<div class="bg"></div>
 </body>
 </html>

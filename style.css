@@ -1,0 +1,88 @@
+body {
+    background-color: #eeeeee;
+    margin-left: 128px;
+    margin-right: 133px;
+}
+
+.vers {
+    background-color: #f7f7f7;
+    width: 1018px;
+    height: 40px;
+}
+
+img[name=eye] {
+    float: left;
+    margin-top: 5px;
+}
+
+.vers > p[name=version] {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    padding-top: 13px;
+    margin-left: 45px;
+    color: #4d4d4d;
+}
+
+img[name=clock] {
+    float: right;
+    margin-right: 115px;
+    margin-top: -29px;
+}
+
+.vers > p[name=date] {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    margin-top: -25px;
+    margin-left: 910px;
+    color: #4d4d4d;
+}
+
+.header > p {
+    font-family: Ubuntu, sans-serif;
+    font-size: 11px;
+    color: #262626;
+    margin-left: 114px;
+    margin-top: 33px;
+}
+
+.header > h2 {
+    font-family: Ubuntu, sans-serif;
+    font-style: italic;
+    color: #262626;
+    margin-top: -20px;
+}
+
+.slider {
+    background-color: #ffffff;
+    height: 435px;
+    width: 1018px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    padding-top: 32px;
+    margin-left: 75px;
+    font-family: Ubuntu, sans-serif;
+    color: #800000;
+}
+
+.indikator {
+    margin-left: 478px;
+    margin-top: 15px;
+}
+
+.button_left {
+    float: left;
+    margin-top: 130px;
+    margin-left: 25px;
+}
+
+.button_right {
+    float: right;
+    margin-top: 130px;
+    margin-right: 25px;
+}
+
+.posters {
+    margin-left: 75px;
+}
