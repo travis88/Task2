@@ -41,15 +41,76 @@ img[name=clock] {
     font-family: Ubuntu, sans-serif;
     font-size: 11px;
     color: #262626;
-    margin-left: 114px;
-    margin-top: 33px;
+    margin-left: 110px;
+    margin-top: 30px;
 }
 
 .header > h2 {
     font-family: Ubuntu, sans-serif;
     font-style: italic;
     color: #262626;
-    margin-top: -20px;
+    margin-left: 110px;
+}
+
+.contacts > img[name=phone] {
+    float: left;
+    margin-left: 496px;
+    margin-top: -80px;
+}
+
+.contacts > p[name=phone] {
+    float: left;
+    margin-left: 530px;
+    margin-top: -80px;
+    font-family: Noto Serif, sans-serif;
+    font-size: 18px;
+}
+
+.contacts > img[name=email] {
+    float: left;
+    margin-left: 496px;
+    margin-top: -50px;
+}
+
+.email {
+    float: left;
+    margin-left: 530px;
+    margin-top: -50px;
+    font-family: Noto Serif, sans-serif;
+    font-size: 18px;
+}
+
+.search > input {
+    font-family: Ubuntu, sans-serif;
+    font-style: italic;
+    float: left;
+    margin-left: 800px;
+    margin-top: -80px;
+    width: 220px;
+    height: 32px;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+nav {
+    background-color: #333333;
+    height: 30px;
+    width: 1018px;
+    padding-top: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 22px;
+    padding-right: 20px;
+    color: white;
+    font-family: Noto Serif, sans-serif;
+    font-size: 13px;
+}
+
+nav > a:hover {
+    color: maroon;
 }
 
 .slider {
@@ -59,7 +120,7 @@ img[name=clock] {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-h2 {
+.slider > h2 {
     padding-top: 32px;
     margin-left: 75px;
     font-family: Ubuntu, sans-serif;
@@ -75,14 +136,122 @@ h2 {
     float: left;
     margin-top: 130px;
     margin-left: 25px;
+    cursor: pointer;
 }
 
 .button_right {
     float: right;
     margin-top: 130px;
     margin-right: 25px;
+    cursor: pointer;
 }
 
 .posters {
     margin-left: 75px;
+}
+
+.subscrip {
+    margin-top: 120px;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 225px;
+    width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-family: Ubuntu, sans-serif;
+}
+
+.subscrip > h3 {
+    color: #800000;
+}
+
+.subscrip > input[type=email] {
+    padding: 8px 8px 8px 10px;
+    font-size: 14px;
+    width: 175px;
+}
+
+.subscrip > input[type=submit] {
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    color: #800000;
+    height: 35px;
+    width: 50px;
+    border: 2px solid maroon;
+    border-radius: 5px;
+}
+
+.news {
+    float: left;
+    margin-left: 378px;
+    margin-top: -340px;
+    font-family: Ubuntu, sans-serif;
+    color: #433f3e;
+}
+
+.hot > h2 {
+    color: #800000;
+}
+
+.hot {
+    width: 350px;
+}
+
+.another {
+    margin-left: 375px;
+    margin-top: -360px;
+    width: 270px;
+}
+
+.another > a {
+    padding-left: 130px;
+    color: #800000;
+}
+
+.past {
+    border-bottom: 1px dotted gray;
+}
+
+.past > p[name=date] {
+    width: 65px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 13px;
+    background-color: #4d4d4d;
+}
+
+.award > img {
+    margin-top: 100px;
+    width: 1018px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+    width: 930px;
+    height: 50px;
+    background-color: #333333;
+    color: #a7a7a7;
+    padding: 30px 40px 30px 50px;
+    font-family: Ubuntu, sans-serif;
+    font-size: 11px;
+    margin-top: 30px;
+}
+
+.footer #about {
+    width: 300px;
+}
+
+.footer #adress {
+    width: 300px;
+    margin-left: 350px;
+    margin-top: -35px;
+}
+
+.footer #social {
+    width: 300px;
+    margin-left: 750px;
+    margin-top: -47px;
+}
+
+#icons > a {
+    padding-right: 5px;
 }
