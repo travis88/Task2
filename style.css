@@ -205,7 +205,7 @@ input[type=search] {
     font-family: Ubuntu, sans-serif;
     color: #800000;
     float: left;
-    margin-left: 450px;
+    margin-left: 390px;
 }
 
 .news_title > a {
@@ -261,7 +261,7 @@ input[type=search] {
 
 .news {
     margin-left: 760px;
-    margin-top: -340px;
+    margin-top: -338px;
     font-family: Ubuntu, sans-serif;
     color: #433f3e;
     float: right;
@@ -270,6 +270,7 @@ input[type=search] {
 .another {
     width: 330px;
     margin-right: 40px;
+    /*margin-top: 18px;*/
 }
 
 
