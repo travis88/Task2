@@ -7,112 +7,132 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-<div class="vers">
+
+<div class="ver">
     <img name="eye" src="images/eye.png">
     <p name="version">ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ</p>
     <img name="clock" src="images/clock.png">
     <p name="date">28 июня 2016 года</p>
 </div>
 
-<div class="header">
-    <p>Республиканский центр народного творчества</p>
-    <h2>Дворец культуры<br>тракторостроителей</h2>
-</div>
-
-<div class="contacts">
-    <img name="phone" src="icons/phone.png">
-    <p name="phone">+7 (8352) <b>01-23-45</b></p>
-    <img name="email" src="icons/email.png">
-    <p class="email"><a href="http://culture21.ru/">info-info@culture21.ru</a></p>
-</div>
-
-<form class="search">
-    <input type="search" placeholder="Поиск по сайту">
-</form>
-
-<nav>
-    <a href="#">Об организации</a>
-    <a href="#">Документы</a>
-    <a href="#">Новости</a>
-    <a href="#">Концепция развития</a>
-    <a href="#">Афиша</a>
-    <a href="#">Фестивали, смотры, конкурсы</a>
-    <a href="#">Контакты</a>
-</nav>
-
-<div class="slider">
-    <h2>Афиша мероприятий</h2>
-    <div class="button_left">
-        <img onclick="previousButtonPressed()" src="images/left_pas.png" name="previos">
-    </div>
-    <div class="button_right">
-        <img onclick="nextButtonPressed()" src="images/right_act.png" name="next">
-    </div>
-
-    <div class="posters">
-        <img src="posters/1.jpg" name="slider1" height="302">
-        <img src="posters/2.jpg" name="slider2" height="302">
-        <img src="posters/3.jpg" name="slider3" height="302">
-        <img src="posters/4.jpg" name="slider4" height="302">
-    </div>
-
-    <div class="indikator">
-        <img onclick="setupPosition(0)" src="images/activ.png" name="dot1">
-        <img onclick="setupPosition(4)" src="images/passiv.png" name="dot2">
-        <img onclick="setupPosition(8)" src="images/passiv.png" name="dot3">
-        <img onclick="setupPosition(12)" src="images/passiv.png" name="dot4">
-    </div>
-</div>
-
-<div class="subscrip">
-    <h3>Подписка на афишу</h3>
-    <p>Подпишитесь на рассылку, чтобы получать новости о предстоящих мероприятиях</p>
-    <input type="email" placeholder="Ваш e-mail" required>
-    <input type="submit" value="OK">
-</div>
-
-<div class="news">
-    <div class="hot">
-        <h2>Новости</h2>
-        <img src="images/news.png">
-        <p><b>Балетная студия "Этуаль" успешно выступила на фестивале-конкурсе "Весеннее вдохновение-2016"</b></p>
-    </div>
-    <div class="another">
-        <a href="#">Посмотреть всё</a>
-        <div class="past">
-            <p name="date">26.06.2016</p>
-            <p><b>В ДК тракторостроителей завершился сезон Дискотек для старшего поколения</b></p>
+<div class="container">
+    <div id="up">
+        <div class="header">
+            <p name="1">Республиканский центр народного творчества</p>
+            <p name="2"><b>Дворец культуры <br> тракторостроителей</b></p>
         </div>
-        <div class="past">
-            <p name="date">25.06.2016</p>
-            <p><b>Сотрудники Республиканского центра народного творчества "ДК тракторостроителей" приняли участие в
-                митинге</b></p>
+
+        <div class="contacts">
+            <img name="phone" src="icons/phone.png">
+            <p name="phone">+7 (8352) <b>01-23-45</b></p>
+            <img name="email" src="icons/email.png">
+            <p><a href="mailto:info-info@culture21.ru">info-info@culture21.ru</a></p>
+        </div>
+
+        <div class="search">
+            <form name="searching">
+                <input type="search" placeholder="Поиск по сайту">
+                <input type="button" class="button_search" value="">
+            </form>
+        </div>
+
+        <div class="nav">
+            <a href="#">Об организации</a>
+            <a href="#">Документы</a>
+            <a href="#">Новости</a>
+            <a href="#">Концепция развития</a>
+            <a href="#">Афиша</a>
+            <a href="#">Фестивали, смотры, конкурсы</a>
+            <a href="#">Контакты</a>
+        </div>
+
+        <div class="slider">
+            <h2>Афиша мероприятий</h2>
+            <div class="button_left">
+                <img onclick="previousButtonPressed()" src="images/left_pas.png" name="previos">
+            </div>
+            <div class="button_right">
+                <img onclick="nextButtonPressed()" src="images/right_act.png" name="next">
+            </div>
+
+            <div class="posters">
+                <img src="posters/1.jpg" name="slider1" height="302">
+                <img src="posters/2.jpg" name="slider2" height="302">
+                <img src="posters/3.jpg" name="slider3" height="302">
+                <img src="posters/4.jpg" name="slider4" height="302">
+            </div>
+
+            <div class="indikator">
+                <img onclick="setupPosition(0)" src="images/activ.png" name="dot1">
+                <img onclick="setupPosition(4)" src="images/passiv.png" name="dot2">
+                <img onclick="setupPosition(8)" src="images/passiv.png" name="dot3">
+                <img onclick="setupPosition(12)" src="images/passiv.png" name="dot4">
+            </div>
+        </div>
+
+        <div class="news_title">
+            <h2>Новости</h2>
+            <a href="#">Посмотреть всё</a>
+        </div>
+
+        <div class="subscrip">
+            <h3>Подписка на афишу</h3>
+            <p>Подпишитесь на рассылку, чтобы получать новости о предстоящих мероприятиях</p>
+            <input type="email" placeholder="Ваш e-mail" required>
+            <input type="submit" value="OK">
+        </div>
+
+        <div class="hot">
+            <img src="images/news.png">
+            <p><b>Балетная студия "Этуаль" успешно выступила на фестивале-конкурсе "Весеннее вдохновение-2016"</b>
+            </p>
+        </div>
+
+        <div class="news">
+            <div class="another">
+                <div class="past">
+                    <p name="date">26.06.2016</p>
+                    <p><b>В ДК тракторостроителей завершился сезон Дискотек для старшего поколения</b></p>
+                </div>
+                <div class="past">
+                    <p name="date">25.06.2016</p>
+                    <p><b>Сотрудники Республиканского центра народного творчества "ДК тракторостроителей" приняли
+                        участие в
+                        митинге</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="award">
+            <a href=http://mkrf.ru/><img src="images/link1.png"></a>
+            <a href=http://gov.cap.ru/default.aspx?gov_id=12><img src="images/link2.png"></a>
+            <a href=http://enc.cap.ru/><img src="images/link3.png"></a>
+            <a href=http://www.archives21.ru/><img src="images/link4.png"></a>
+            <a href=http://gov.cap.ru/><img src="images/link5.png"></a>
+            <a href=http://god-kino2016.ru/><img src="images/link6.png"></a>
+        </div>
+
+        <div class="footer">
+            <div class="about">
+                © 2016, Автономное учреждение "Республиканский <br> центр народного творчества "ДК <br>
+                тракторостроителей"
+                Минкультуры Чувашии"
+            </div>
+            <div class="adress">
+                428000, Чувашская Республика, г.Чебоксары, <br> Эгерский бульвар д.36 <br> +7 8352 52-36-64,
+                culture-dkts@cap.ru
+            </div>
+            <div class=social>
+                <p>Мы в соцсетях:</p>
+                <div id="icons">
+                    <a href="https://vk.com/"><img src="icons/vk_black.png"></a>
+                    <a href="https://www.facebook.com"><img src="icons/facebook_black.png"></a>
+                    <a href="https://ok.ru/"><img src="icons/odn_black.png"></a>
+                    <a href="https://twitter.com/"><img src="icons/twitter_black.png"></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-<div class="award">
-    <img src="images/awards.png">
-</div>
-
-<div class="footer">
-    <div id="about">
-        © 2016, Автономное учреждение "Республиканский центр народного творчества "ДК <br> тракторостроителей"
-        Минкультуры Чувашии"
-    </div>
-    <div id="adress">
-        428000, Чувашская Республика, г.Чебоксары, <br> Эгерский бульвар д.36 <br> +7 8352 52-36-64, culture-dkts@cap.ru
-    </div>
-    <div id=social>
-        <p>Мы в соцсетях:</p>
-        <div id="icons">
-            <a href="https://vk.com/"><img src="icons/vk.png"></a>
-            <a href="https://www.facebook.com"><img src="icons/facebook.png"></a>
-            <a href="https://ok.ru/"><img src="icons/odn.png"></a>
-            <a href="https://twitter.com/"><img src="icons/twitter.png"></a>
-        </div>
-    </div>
-</div>
-
 </body>
 </html>

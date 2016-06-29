@@ -1,139 +1,183 @@
 body {
-    background-color: #e6e1e1;
-    margin-left: 128px;
-    margin-right: 133px;
+    background-color: #D3D3D3;
+    margin: 0;
 }
 
-.vers {
+.ver {
     background-color: #f7f7f7;
-    margin-left: -128px;
-    padding-left: 128px;
-    width: 1150px;
+    width: 100%;
     height: 40px;
+    padding-left: 30px;
+    align-content: center;
 }
 
-img[name=eye] {
-    float: left;
-    margin-top: 5px;
+.ver > img[name=eye] {
+    padding-top: 5px;
 }
 
-.vers > p[name=version] {
+.ver > p[name=version] {
     font-family: Roboto, sans-serif;
     font-size: 12px;
-    padding-top: 13px;
-    margin-left: 45px;
+    padding-left: 40px;
+    margin-top: -25px;
     color: #4d4d4d;
 }
 
-img[name=clock] {
+.ver > img[name=clock] {
     float: left;
-    margin-left: 885px;
+    margin-left: 975px;
     margin-top: -29px;
 }
 
-.vers > p[name=date] {
+.ver > p[name=date] {
     font-family: Roboto, sans-serif;
     font-size: 12px;
     margin-top: -25px;
-    margin-left: 910px;
+    margin-left: 1000px;
     color: #4d4d4d;
 }
 
-.header > p {
+.container {
+    width: 1140px;
+    padding-left: 30px;
+    /*margin-right: 30px;*/
+    align-content: center;
+}
+
+#up > div {
+    display: inline-block;
+}
+
+.header {
+    width: 460px;
+    height: 120px;
+    text-align: right;
+}
+
+.header p[name="1"] {
     font-family: Ubuntu, sans-serif;
     font-size: 11px;
     color: #262626;
-    margin-left: 110px;
-    margin-top: 30px;
+    /*text-align: right;*/
+    margin-right: 120px;
 }
 
-.header > h2 {
+.header p[name="2"] {
     font-family: Ubuntu, sans-serif;
-    font-style: italic;
+    font-size: 26px;
+    font-style: oblique;
     color: #262626;
-    margin-left: 110px;
+    margin-right: 120px;
+}
+
+.contacts {
+    width: 380px;
+    height: 100px;
 }
 
 .contacts > img[name=phone] {
     float: left;
-    margin-left: 496px;
-    margin-top: -80px;
+    margin-top: 10px;
 }
 
 .contacts > p[name=phone] {
-    float: left;
-    margin-left: 530px;
-    margin-top: -80px;
     font-family: Noto Serif, sans-serif;
     font-size: 18px;
+    margin-top: 10px;
 }
 
-.contacts > img[name=email] {
-    float: left;
-    margin-left: 496px;
-    margin-top: -50px;
-}
-
-.email > a {
-    float: left;
-    margin-left: 530px;
-    margin-top: -50px;
-    font-family: Noto Serif, sans-serif;
-    font-size: 18px;
+p > a {
     text-decoration: none;
     color: black;
 }
 
-.search > input {
+.contacts > p {
+    font-family: Noto Serif, sans-serif;
+    font-size: 16px;
+    margin-left: 34px;
+    margin-top: -28px;
+}
+
+.search {
+    width: 295px;
+    height: 80px;
+    float: right;
+    margin-right: -40px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.button_search {
+    background: url("icons/search.png") no-repeat;
+    margin-left: -42px;
+    width: 24px;
+    margin-top: 5px;
+    border: none;
+}
+
+.button_search:hover {
+    cursor: pointer;
+}
+
+input[type=search] {
     font-family: Ubuntu, sans-serif;
     font-style: italic;
     float: left;
-    margin-left: 800px;
-    margin-top: -80px;
     width: 220px;
-    height: 32px;
+    height: 30px;
     padding-left: 10px;
+    padding-right: 40px;
     border-radius: 20px;
 }
 
-nav {
+.nav {
     background-color: #333333;
-    height: 30px;
-    width: 1018px;
-    padding-top: 10px;
+    height: 38px;
+    width: 1110px;
+    padding-top: 12px;
 }
 
-nav > a {
+.nav > a {
     text-decoration: none;
     padding-top: 10px;
-    padding-left: 22px;
-    padding-right: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
     color: white;
     font-family: Noto Serif, sans-serif;
     font-size: 13px;
 }
 
-nav > a:hover {
+.nav > a:hover {
     color: maroon;
 }
 
 .slider {
+    margin-top: 30px;
     background-color: #ffffff;
-    height: 435px;
-    width: 1018px;
+    height: 470px;
+    width: 1110px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .slider > h2 {
-    padding-top: 32px;
-    margin-left: 75px;
+    padding-top: 20px;
+    margin-left: 85px;
     font-family: Ubuntu, sans-serif;
     color: #800000;
 }
 
+.posters > img {
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
 .indikator {
-    margin-left: 478px;
+    margin-left: 522px;
     margin-top: 15px;
+}
+
+.indikator:hover {
+    cursor: pointer;
 }
 
 .button_left {
@@ -151,11 +195,29 @@ nav > a:hover {
 }
 
 .posters {
-    margin-left: 75px;
+    margin-left: 80px;
+}
+
+.news_title {
+    margin-top: 30px;
+    width: 1110px;
+}
+
+.news_title > h2 {
+    font-family: Ubuntu, sans-serif;
+    color: #800000;
+    float: left;
+    margin-left: 450px;
+}
+
+.news_title > a {
+    font-family: Ubuntu, sans-serif;
+    color: #800000;
+    float: right;
+    margin-top: 20px;
 }
 
 .subscrip {
-    margin-top: 120px;
     padding-left: 30px;
     padding-top: 15px;
     height: 225px;
@@ -163,6 +225,8 @@ nav > a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     font-family: Ubuntu, sans-serif;
     background-color: white;
+    border: 3px solid #f2f2f2;
+    float: left;
 }
 
 .subscrip > h3 {
@@ -185,32 +249,31 @@ nav > a:hover {
     border-radius: 5px;
 }
 
-.news {
-    float: left;
-    margin-left: 378px;
-    margin-top: -340px;
-    font-family: Ubuntu, sans-serif;
-    color: #433f3e;
-}
-
-.hot > h2 {
-    color: #800000;
+.subscrip > input[type=submit]:hover {
+    cursor: pointer;
 }
 
 .hot {
     width: 350px;
+    float: right;
+    margin-right: 400px;
+    font-family: Ubuntu, sans-serif;
+    color: #433f3e;
+}
+
+.news {
+    margin-left: 760px;
+    margin-top: -340px;
+    font-family: Ubuntu, sans-serif;
+    color: #433f3e;
+    float: right;
 }
 
 .another {
-    margin-left: 375px;
-    margin-top: -360px;
-    width: 270px;
+    width: 330px;
+    margin-right: 40px;
 }
 
-.another > a {
-    padding-left: 130px;
-    color: #800000;
-}
 
 .past {
     border-bottom: 1px dotted gray;
@@ -224,37 +287,46 @@ nav > a:hover {
     background-color: #4d4d4d;
 }
 
-.award > img {
+.award {
     margin-top: 100px;
-    width: 1018px;
+    width: 1110px;
+    height: 120px;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding-top: 20px;
+}
+
+.award > a {
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .footer {
-    width: 930px;
-    height: 50px;
+    width: 1110px;
+    height: 90px;
     background-color: #333333;
     color: #a7a7a7;
-    padding: 30px 40px 30px 50px;
     font-family: Ubuntu, sans-serif;
     font-size: 11px;
     margin-top: 30px;
 }
 
-.footer #about {
-    width: 300px;
+.about {
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
-.footer #adress {
-    width: 300px;
-    margin-left: 350px;
-    margin-top: -35px;
+.adress {
+    float: left;
+    margin-top: 20px;
+    margin-left: 100px;
 }
 
-.footer #social {
-    width: 300px;
-    margin-left: 750px;
-    margin-top: -50px;
+.social {
+    float: left;
+    margin-top: 8px;
+    margin-left: 250px;
 }
 
 #icons > a {
